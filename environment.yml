@@ -1,0 +1,94 @@
+name: ai-summit
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.11
+  - pip
+
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+  - python-dotenv         
+  - tqdm
+  - rich
+
+  # --- Core data science ---
+  - numpy
+  - pandas
+  - scipy
+  - polars
+  - pyarrow
+  - duckdb
+  - sqlalchemy
+  - openpyxl               
+  - xlrd
+
+  # --- Machine learning ---
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - statsmodels
+  - imbalanced-learn       
+  - shap                   
+  - optuna                 
+  
+  # --- Deep learning / NLP (CPU builds) ---
+  - pytorch
+  - transformers
+  - sentence-transformers
+  - tokenizers
+  - datasets
+  - spacy
+  - nltk
+
+  # --- Visualisation ---
+  - matplotlib
+  - seaborn
+  - plotly
+  - altair
+  - networkx             
+
+  # --- Dashboards & app UIs ---
+  - streamlit
+  - dash
+  - gradio
+
+  # --- Document parsing & generation (proposals, specs, datasheets) ---
+  - pypdf
+  - pdfplumber
+  - pymupdf
+  - python-docx
+  - python-pptx
+  - markdown
+  - beautifulsoup4
+  - lxml
+
+  # --- Web, APIs & scouting ---
+  - requests
+  - httpx
+  - pydantic
+  - fastapi
+  - uvicorn
+
+  # --- Chemistry (extractables / USP <665> data) ---
+  - rdkit
+  - pubchempy
+
+  # --- Vector stores for RAG / "memory" ---
+  - faiss-cpu
+
+  # --- Fast-moving LLM / agent libraries (via pip for latest releases) ---
+  - pip:
+      - openai
+      - anthropic
+      - langchain
+      - langchain-community
+      - langchain-openai
+      - langchain-anthropic
+      - langgraph
+      - llama-index
+      - chromadb
+      - tiktoken
+      - unstructured
